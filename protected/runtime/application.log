@@ -360,3 +360,247 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/
 ---
+2014/02/17 13:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/register".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/register
+---
+2014/02/17 13:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/register".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/register
+---
+2014/02/17 13:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/register".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/register
+---
+2014/02/17 13:39:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/register".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/register')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/users/register
+---
+2014/02/17 13:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/register".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user/register
+---
+2014/02/17 13:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /home/vadim/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/vadim/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /home/vadim/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#3 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/login
+---
+2014/02/17 13:57:20 [error] [php] include(UserForm.php): failed to open stream: No such file or directory (/home/vadim/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(14): spl_autoload_call()
+#1 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#2 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/vadim/yii/framework/web/CController.php(286): UserController->runAction()
+#4 /home/vadim/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#5 /home/vadim/yii/framework/web/CWebApplication.php(282): UserController->run()
+#6 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/vadim/projects/www/yiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/register
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (14)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 13:57:21 [error] [php] include(UserForm.php): failed to open stream: No such file or directory (/home/vadim/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(14): spl_autoload_call()
+#1 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#2 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/vadim/yii/framework/web/CController.php(286): UserController->runAction()
+#4 /home/vadim/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#5 /home/vadim/yii/framework/web/CWebApplication.php(282): UserController->run()
+#6 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/vadim/projects/www/yiitest/index.php(13): CWebApplication->run()
+REQUEST_URI=/register
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (14)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:06:50 [error] [exception.CException] exception 'CException' with message 'Property "UserForm.repeat_password" is not defined.' in /home/vadim/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/vadim/yii/framework/web/helpers/CHtml.php(2529): CComponent->__get('repeat_password')
+#1 /home/vadim/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(UserForm), 'repeat_password')
+#2 /home/vadim/yii/framework/web/helpers/CHtml.php(1628): CHtml::activeInputField('password', Object(UserForm), 'repeat_password', Array)
+#3 /home/vadim/projects/www/yiitest/protected/views/user/register.php(14): CHtml::activePasswordField(Object(UserForm), 'repeat_password')
+#4 /home/vadim/yii/framework/web/CBaseController.php(126): require('/home/vadim/pro...')
+#5 /home/vadim/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/vadim/pro...', Array, true)
+#6 /home/vadim/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/vadim/pro...', Array, true)
+#7 /home/vadim/yii/framework/web/CController.php(782): CController->renderPartial('register', Array, true)
+#8 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(25): CController->render('register', Array)
+#9 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#10 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/vadim/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/vadim/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/vadim/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#14 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#15 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/register
+---
+2014/02/17 14:07:02 [error] [exception.CException] exception 'CException' with message 'Property "UserForm.repeat_password" is not defined.' in /home/vadim/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/vadim/yii/framework/web/helpers/CHtml.php(2529): CComponent->__get('repeat_password')
+#1 /home/vadim/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(UserForm), 'repeat_password')
+#2 /home/vadim/yii/framework/web/helpers/CHtml.php(1628): CHtml::activeInputField('password', Object(UserForm), 'repeat_password', Array)
+#3 /home/vadim/projects/www/yiitest/protected/views/user/register.php(14): CHtml::activePasswordField(Object(UserForm), 'repeat_password')
+#4 /home/vadim/yii/framework/web/CBaseController.php(126): require('/home/vadim/pro...')
+#5 /home/vadim/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/vadim/pro...', Array, true)
+#6 /home/vadim/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/vadim/pro...', Array, true)
+#7 /home/vadim/yii/framework/web/CController.php(782): CController->renderPartial('register', Array, true)
+#8 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(25): CController->render('register', Array)
+#9 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#10 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/vadim/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/vadim/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/vadim/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#14 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#15 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/register
+---
+2014/02/17 14:07:16 [error] [exception.CException] exception 'CException' with message 'Property "UserForm.repeat_password" is not defined.' in /home/vadim/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/vadim/yii/framework/web/helpers/CHtml.php(2529): CComponent->__get('repeat_password')
+#1 /home/vadim/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(UserForm), 'repeat_password')
+#2 /home/vadim/yii/framework/web/helpers/CHtml.php(1628): CHtml::activeInputField('password', Object(UserForm), 'repeat_password', Array)
+#3 /home/vadim/projects/www/yiitest/protected/views/user/register.php(14): CHtml::activePasswordField(Object(UserForm), 'repeat_password')
+#4 /home/vadim/yii/framework/web/CBaseController.php(126): require('/home/vadim/pro...')
+#5 /home/vadim/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/vadim/pro...', Array, true)
+#6 /home/vadim/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/vadim/pro...', Array, true)
+#7 /home/vadim/yii/framework/web/CController.php(782): CController->renderPartial('register', Array, true)
+#8 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(25): CController->render('register', Array)
+#9 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#10 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/vadim/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/vadim/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/vadim/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#14 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#15 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/register
+---
+2014/02/17 14:09:46 [error] [exception.CException] exception 'CException' with message 'Property "UserForm.repeat_password" is not defined.' in /home/vadim/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/vadim/yii/framework/web/helpers/CHtml.php(2529): CComponent->__get('repeat_password')
+#1 /home/vadim/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(UserForm), 'repeat_password')
+#2 /home/vadim/yii/framework/web/helpers/CHtml.php(1628): CHtml::activeInputField('password', Object(UserForm), 'repeat_password', Array)
+#3 /home/vadim/projects/www/yiitest/protected/views/user/register.php(19): CHtml::activePasswordField(Object(UserForm), 'repeat_password')
+#4 /home/vadim/yii/framework/web/CBaseController.php(126): require('/home/vadim/pro...')
+#5 /home/vadim/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/vadim/pro...', Array, true)
+#6 /home/vadim/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/vadim/pro...', Array, true)
+#7 /home/vadim/yii/framework/web/CController.php(782): CController->renderPartial('register', Array, true)
+#8 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(25): CController->render('register', Array)
+#9 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#10 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/vadim/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/vadim/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/vadim/yii/framework/web/CWebApplication.php(282): CController->run('register')
+#14 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#15 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/register
+---
+2014/02/17 14:12:06 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:30:50 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:31:01 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:31:11 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:31:20 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:32:41 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:34:24 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:34:31 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:35:23 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:41:18 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:42:31 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:43:01 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:43:03 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 14:44:20 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
+2014/02/17 15:03:34 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "redirect".' in /home/vadim/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(33): CComponent->__call('redirect', Array)
+#1 /home/vadim/projects/www/yiitest/protected/controllers/UserController.php(33): CWebApplication->redirect('index')
+#2 /home/vadim/yii/framework/web/actions/CInlineAction.php(49): UserController->actionLogin()
+#3 /home/vadim/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/vadim/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/vadim/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/vadim/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#8 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://localhost:8000/login
+---
+2014/02/17 15:04:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index
+HTTP_REFERER=http://localhost:8000/login
+---
+2014/02/17 15:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /home/vadim/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/vadim/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /home/vadim/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/vadim/projects/www/yiitest/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index
+---
+2014/02/17 15:05:04 [warning] [application] Failed to set unsafe attribute "repeatPassword" of "User".
+in /home/vadim/projects/www/yiitest/protected/controllers/UserController.php (19)
+in /home/vadim/projects/www/yiitest/index.php (13)
