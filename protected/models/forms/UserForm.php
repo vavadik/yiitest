@@ -11,9 +11,10 @@ class UserForm extends CFormModel {
     public function rules() {
         return array(
             array('login, password', 'required'),
+            array('login', 'unique', 'className' => 'User', 'attributeName' => 'login', 'on' => 'register'),
             array('password, login', 'length', 'min' => 4, 'max' => 40),
             array('repeatPassword', 'required', 'on' => 'register'),
-            array('password', 'compare', 'compareAttribute' => 'repeatPassword', 'on' => 'register'),
+            array('repeatPassword', 'compare', 'compareAttribute' => 'password', 'on' => 'register'),
             array('rememberMe', 'boolean', 'on' => 'login'),
             array('password', 'authenticate', 'on' => 'login'),
         );

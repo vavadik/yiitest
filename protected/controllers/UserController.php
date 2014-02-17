@@ -12,6 +12,7 @@ class UserController extends Controller {
 
     public function actionRegister() {
         $formModel = new UserForm('register');
+        $this->performAjaxValidation($formModel);
         if (isset($_POST['UserForm'])) {
             $formModel->attributes = $_POST['UserForm'];
             if ($formModel->validate()) {
@@ -34,5 +35,16 @@ class UserController extends Controller {
             }
         }
         $this->render('login', array('model' => $formModel));
+    }
+
+    /**
+     * Performs the AJAX validation.
+     * @param User $model the model to be validated
+     */
+    protected function performAjaxValidation($model) {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'user-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
     }
 }
