@@ -1,3 +1,5 @@
+<h3>Login page</h3>
+
 <div class="form">
     <?= CHtml::beginForm() ?>
     <?= CHtml::errorSummary($model) ?>
@@ -10,7 +12,7 @@
         <?= CHtml::activePasswordField($model, 'password') ?>
     </div>
     <div class="row">
-        <?= CHtml::submitButton('Register') ?>
+        <?= CHtml::submitButton('Login') ?>
     </div>
     <? CHtml::endForm() ?>
 </div>
