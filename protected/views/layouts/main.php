@@ -8,7 +8,9 @@
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
+<?= $this->renderPartial('/layouts/header') ?>
 <div class="container" id="page">
+    <?php $this->widget('ext.leftside.LeftSide', array('structure' => $this->leftside)) ?>
     <?php echo $content; ?>
 </div>
 </body>

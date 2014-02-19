@@ -31,10 +31,17 @@ class UserController extends Controller {
         if (isset($_POST['UserForm'])) {
             $formModel->attributes = $_POST['UserForm'];
             if ($formModel->validate()) {
+                Yii::app()->user->login($formModel->getIdentity());
                 $this->redirect('/');
             }
         }
         $this->render('login', array('model' => $formModel));
+    }
+
+    public function actionLogout() {
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->createAbsoluteUrl('/'));
+        Yii::app()->end();
     }
 
     /**
@@ -45,6 +52,24 @@ class UserController extends Controller {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'user-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
+        }
+    }
+
+    public function actionShowAll() {
+        $dataProvider = new CActiveDataProvider('User', array(
+            'pagination' => array(
+                'pageSize' => 2
+            ),
+        ));
+        $this->render('showall', array('data' => $dataProvider));
+    }
+
+    public function actionShow($name) {
+        $user = User::model()->findByAttributes(array('login' => $name));
+        if ($user !== null) {
+            $this->render('show', array('name' => $user->login));
+        } else {
+            $this->render('nouser', array('name' => $name));
         }
     }
 }

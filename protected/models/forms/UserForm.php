@@ -27,6 +27,10 @@ class UserForm extends CFormModel {
         }
     }
 
+    public function getIdentity() {
+        return $this->_identity;
+    }
+
     public function attributeLabels() {
         return array(
             'login' => 'Login',

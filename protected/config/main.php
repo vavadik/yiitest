@@ -28,6 +28,9 @@ return array(
     ),
     // application components
     'components' => array(
+        'leftside' => array(
+            'class' => 'LeftSide',
+        ),
 //        'clientScript' => array(
 //            'scriptMap' => array(
 //            )
@@ -45,6 +48,9 @@ return array(
                 'countries/<id:\d+>' => 'address/cities',
                 'register' => 'user/register',
                 'login' => 'user/login',
+                'logout' => 'user/logout',
+                'users' => 'user/showall',
+                'user/<name:\w+>' => 'user/show',
             ),
         ),
         'db' => array(
@@ -53,6 +59,10 @@ return array(
             'username' => 'root',
             'password' => 'root',
             'charset' => 'utf8',
+        ),
+        'authManager' => array(
+            'class' => 'CDbAuthManager',
+            'connectionID' => 'db',
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
